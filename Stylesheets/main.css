@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: var(--globalBackgroundColor);
+    background-image: var(--globalBackgroundImage-1);
+    background-size: 100%;
+}
+
+.navbar {
+    height: var(--navbarHeight);
+    width: var(--navbarWidth);
+    background-color: var(--navbarBackgroundColor);
+    backdrop-filter: blur( var(--navbarBackgroundBlur) );
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .left .item {
+    color: var(--navbarIconColor);
+    background-color: var(--navbarIconBackgroundColor);
+
+    margin: var(--navbarIconMargin);
+    width: var(--navbarIconWidth);
+    height: var(--navbarIconHeight);
+    padding: var(--navbarIconPadding);
+    border-radius: var(--navbarIconBorderRadius);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .left .item:hover {
+    background-color: var(--globalHoverColor);
+}
+.navbar .left .item:active {
+    background-color: var(--globalClickColor);
+}
+
