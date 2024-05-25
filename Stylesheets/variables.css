@@ -10,9 +10,9 @@
     --globalBackgroundColor: #1d1d1f99;
     --globalBackgroundBlur: 15px;
     --globalAccentColor: ;
-    --globalHoverColor: #cca3a366;      /* Ends in 66 */
-    --globalClickColor: #FFC9C999;      /* Ends in 99 */
-    --globalActiveColor: #FFA0A0bb;     /* Ends in bb */
+    --globalHoverColor: #A484FF66;      /* Ends in 66 */
+    --globalClickColor: #A484FF99;      /* Ends in 99 */
+    --globalActiveColor: #A484FFbb;     /* Ends in bb */
 
 
     /* Navbar */
