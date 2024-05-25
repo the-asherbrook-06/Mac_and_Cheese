@@ -6,15 +6,15 @@
 
 body {
     background-color: var(--globalBackgroundColor);
-    background-image: var(--globalBackgroundImage-1);
+    background-image: var(--globalBackgroundImage-3);
     background-size: 100%;
 }
 
 .navbar {
     height: var(--navbarHeight);
     width: var(--navbarWidth);
-    background-color: var(--navbarBackgroundColor);
-    backdrop-filter: blur( var(--navbarBackgroundBlur) );
+    background-color: var(--globalBackgroundColor);
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
 
     display: grid;
     grid-template-columns: var(--navbarSeperatorWidth);
@@ -46,6 +46,9 @@ body {
 }
 .navbar .left .item:active {
     background-color: var(--globalClickColor);
+}
+.navbar .left .active {
+    background-color: var(--globalActiveColor);
 }
 
 .navbar .center {
@@ -87,7 +90,8 @@ body {
 }
 
 .menu {
-    background-color: var(--menuBackgroundColor);
+    background-color: var(--globalBackgroundColor);
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
     color: var(--menuTextColor);
 
     padding: 5px;
@@ -120,3 +124,95 @@ body {
     display: flex;
     justify-content: end;
 }
+
+.quickSetting {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;;
+
+    position: fixed;
+    top: 5vh;
+    right: 10px;
+
+    background-color: var(--globalBackgroundColor);
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
+    color: var(--quickSettingsColor);
+
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.quickSetting .item {
+    height: 100%;
+    width: 100%;
+    background-color: var(--navbarIconBackgroundColor);
+    border-radius: 10px;
+
+    display: flex;
+}
+
+.quickSetting .clock {
+    grid-row: span 2;
+    grid-column: span 2;
+
+    font-size: xx-large;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.quickSetting .clock .time {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quickSetting .clock .am-pm {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quickSetting .account {
+    grid-column: span 1;
+
+    align-items: center;
+    justify-content: center;
+}
+.quickSetting .windowMode {
+    grid-column: span 2;
+
+    align-items: center;
+    justify-content: center;
+}
+.quickSetting .settingShortcut {
+    grid-column: span 1;
+
+    align-items: center;
+    justify-content: center;
+}
+.quickSetting   .accentColor {
+    grid-column: span 4;
+
+    justify-content: space-around;
+    align-items: center;
+}
+.quickSetting .accentColor .color:hover {
+    transform: scale(1.2);
+}
+.quickSetting .accentColor .color:active {
+    transform: scale(1.1);
+}
+
+.quickSetting .accentColor .purple { color: #A484FF; }
+.quickSetting .accentColor .blue { color: #7E8BFF; }
+.quickSetting .accentColor .cyan { color: #66BDD8; }
+.quickSetting .accentColor .green { color: #85FFB6; }
+.quickSetting .accentColor .yellow { color: #C3E086; }
+.quickSetting .accentColor .orange { color: #FFCA8B; }
+.quickSetting .accentColor .red { color: #FFA0A0; }
+
+
+

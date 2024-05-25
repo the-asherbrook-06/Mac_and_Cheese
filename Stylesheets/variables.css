@@ -4,9 +4,11 @@
     --globalBackgroundImage-0: '';
     --globalBackgroundImage-1: url('../Assets/BackgroundImages/Abstract_1.jpg');
     --globalBackgroundImage-2: url('../Assets/BackgroundImages/Abstract_2.jpg');
+    --globalBackgroundImage-3: url('../Assets/BackgroundImages/Abstract_3.jpg');
 
     /* Global Variables */
-    --globalBackgroundColor: black;
+    --globalBackgroundColor: #1d1d1f99;
+    --globalBackgroundBlur: 15px;
     --globalAccentColor: ;
     --globalHoverColor: #cca3a366;      /* Ends in 66 */
     --globalClickColor: #FFC9C999;      /* Ends in 99 */
@@ -16,13 +18,11 @@
     /* Navbar */
     --navbarHeight: 4.5vh;
     --navbarWidth: 100vw;
-    --navbarBackgroundColor: #1d1d1fcc;
-    --navbarBackgroundBlur: 10px;
     --navbarSeperatorWidth: 1fr 1fr 1fr;
 
         /* Navbar Icons */
         --navbarIconColor: #ccc;
-        --navbarIconBackgroundColor: rgba(128, 128, 128, 0.137);
+        --navbarIconBackgroundColor: rgba(128, 128, 128, 0.089);
         --navbarIconWidth: fit-content;
         --navbarIconHeight: 29px;
         --navbarIconBorderRadius: 5px;
@@ -37,11 +37,17 @@
     /* Menu Popout */
     --menuPopoutWidth: fit-content;
     --menuPopoutHeight: fit-content;
-    --menuBackgroundColor: #1d1d1fcc;
+    --menuBackgroundColor: #1d1d1f99;
+    --menuBackgroundBlur: 10px;
     --menuTextColor: #ccc;
     --menuBorderRadius: 10px;
 
         /* Menu Popout Items */
         --menuPopoutItemPadding: 10px;
         --menuPopoutItemMargin: 5px;
+    
+    /* Quick Settings Popout */
+    --quickSettingsColor: #ccc;
+    --quickSettingsItemBackgroundColor: rgba(128, 128, 128, 0.089);
+
 }

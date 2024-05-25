@@ -19,8 +19,8 @@
         </div>
         <div class="center roboto-medium"> Title </div>
         <div class="right">  
-            <span class="material-symbols-outlined lightIcon item">settings</span>
             <span class="material-symbols-outlined lightIcon item">contrast</span>
+            <span class="material-symbols-outlined lightIcon item" id="quickSettingButton">settings</span>
         </div>
     </div>
     <div class="menu roboto" id="menuPopout">
@@ -37,7 +37,33 @@
             <div class="shortcut"> ⌥ A</div>
         </div>
     </div>
+    <div class="quickSetting roboto" id="quickSettingPopout">
+        <div class="clock item" id="quickSettingsClock"> 
+            <div class="time"></div>
+            <div class="am-pm"></div>
+        </div>
+        <div class="account item">
+            <span class="material-symbols-outlined">account_circle</span>
+        </div>
+        <div class="settingShortcut item">
+            <span class="material-symbols-outlined">settings</span>
+        </div>
+        <div class="windowMode item">
+            <span class="material-symbols-outlined">select_window</span>
+        </div>
+        <div class="accentColor item">
+            <span class="material-symbols-outlined color purple"> radio_button_checked </span>
+            <span class="material-symbols-outlined color blue"> radio_button_checked </span>
+            <span class="material-symbols-outlined color cyan"> radio_button_checked </span>
+            <span class="material-symbols-outlined color green"> radio_button_checked </span>
+            <span class="material-symbols-outlined color yellow"> radio_button_checked </span>
+            <span class="material-symbols-outlined color orange"> radio_button_checked </span>
+            <span class="material-symbols-outlined color red active"> check_circle </span>
+        </div>     <!-- 4 x 1 -->
+    </div>
 </body>
 </html>
 
 <script src="./Scripts/menuPopout.js"></script>
+<script src="./Scripts/quickSettings.js"></script>
+<script src="./Scripts/clock.js"></script>
