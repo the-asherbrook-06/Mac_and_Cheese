@@ -14,11 +14,30 @@
 <body>
     <div class="navbar">
         <div class="left roboto">
-            <span class="material-symbols-outlined lightIcon item">lists</span>
-            <span class="material-symbols-outlined normalIcon item">home</span>
+            <span class="material-symbols-outlined lightIcon item" id="menuButton">lists</span>
+            <span class="material-symbols-outlined normalIcon item" id="homeButton">home</span>
         </div>
-        <div class="center">  </div>
-        <div class="right">  </div>
+        <div class="center roboto-medium"> Title </div>
+        <div class="right">  
+            <span class="material-symbols-outlined lightIcon item">settings</span>
+            <span class="material-symbols-outlined lightIcon item">contrast</span>
+        </div>
+    </div>
+    <div class="menu roboto" id="menuPopout">
+        <div class="item">
+            <div class="content">Home</div>
+            <div class="shortcut"> ⌥ H </div>
+        </div>
+        <div class="item">
+            <div class="content">Preferences</div>
+            <div class="shortcut"> ⌥ S</div>
+        </div>
+        <div class="item">
+            <div class="content">About</div>
+            <div class="shortcut"> ⌥ A</div>
+        </div>
     </div>
 </body>
 </html>
+
+<script src="./Scripts/menuPopout.js"></script>

@@ -18,13 +18,30 @@
     --navbarWidth: 100vw;
     --navbarBackgroundColor: #1d1d1fcc;
     --navbarBackgroundBlur: 10px;
+    --navbarSeperatorWidth: 1fr 1fr 1fr;
 
-        /* Navbar Logo */
+        /* Navbar Icons */
         --navbarIconColor: #ccc;
         --navbarIconBackgroundColor: rgba(128, 128, 128, 0.137);
-        --navbarIconMargin: 0vh 0vw 0vh 0.5vw;
-        --navbarIconPadding: 0 1vw;
         --navbarIconWidth: fit-content;
         --navbarIconHeight: 29px;
         --navbarIconBorderRadius: 5px;
+        --navbarIconPadding: 0 1vw;
+
+        /* Navbar Left Icons */
+        --navbarLeftIconMargin: 0vh 0vw 0vh 0.5vw;
+
+        /* Navbar Right Icons */
+        --navbarRightIconMargin: 0vh 0.5vw 0vh 0vw;
+    
+    /* Menu Popout */
+    --menuPopoutWidth: fit-content;
+    --menuPopoutHeight: fit-content;
+    --menuBackgroundColor: #1d1d1fcc;
+    --menuTextColor: #ccc;
+    --menuBorderRadius: 10px;
+
+        /* Menu Popout Items */
+        --menuPopoutItemPadding: 10px;
+        --menuPopoutItemMargin: 5px;
 }
