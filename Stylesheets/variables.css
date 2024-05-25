@@ -16,38 +16,24 @@
 
 
     /* Navbar */
-    --navbarHeight: 4.5vh;
-    --navbarWidth: 100vw;
-    --navbarSeperatorWidth: 1fr 1fr 1fr;
-
-        /* Navbar Icons */
-        --navbarIconColor: #ccc;
-        --navbarIconBackgroundColor: rgba(128, 128, 128, 0.089);
-        --navbarIconWidth: fit-content;
-        --navbarIconHeight: 29px;
-        --navbarIconBorderRadius: 5px;
-        --navbarIconPadding: 0 1vw;
-
-        /* Navbar Left Icons */
-        --navbarLeftIconMargin: 0vh 0vw 0vh 0.5vw;
-
-        /* Navbar Right Icons */
-        --navbarRightIconMargin: 0vh 0.5vw 0vh 0vw;
+    --navbarIconColor: #ccc;
+    --navbarIconBackgroundColor: rgba(128, 128, 128, 0.089);
     
     /* Menu Popout */
-    --menuPopoutWidth: fit-content;
-    --menuPopoutHeight: fit-content;
     --menuBackgroundColor: #1d1d1f99;
     --menuBackgroundBlur: 10px;
     --menuTextColor: #ccc;
-    --menuBorderRadius: 10px;
-
-        /* Menu Popout Items */
-        --menuPopoutItemPadding: 10px;
-        --menuPopoutItemMargin: 5px;
     
     /* Quick Settings Popout */
     --quickSettingsColor: #ccc;
     --quickSettingsItemBackgroundColor: rgba(128, 128, 128, 0.089);
+
+    /* Setting Group */
+    --settingGroupTitleColor: #ccc;
+    --settingGroupPadding: 20px;
+
+    /* Setting Content */
+    --settingContentTitleColor: #eee;
+    --settingContentPadding: 20px;
 
 }

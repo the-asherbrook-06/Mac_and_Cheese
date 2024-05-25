@@ -6,18 +6,18 @@
 
 body {
     background-color: var(--globalBackgroundColor);
-    background-image: var(--globalBackgroundImage-3);
+    background-image: var(--globalBackgroundImage-2);
     background-size: 100%;
 }
 
 .navbar {
-    height: var(--navbarHeight);
-    width: var(--navbarWidth);
+    height: 4.5vh;
+    width: 100vw;
     background-color: var(--globalBackgroundColor);
     backdrop-filter: blur( var(--globalBackgroundBlur) );
 
     display: grid;
-    grid-template-columns: var(--navbarSeperatorWidth);
+    grid-template-columns: 1fr 1fr 1fr;
     position: fixed;
 }
 
@@ -31,11 +31,11 @@ body {
     color: var(--navbarIconColor);
     background-color: var(--navbarIconBackgroundColor);
 
-    margin: var(--navbarLeftIconMargin);
-    width: var(--navbarIconWidth);
-    height: var(--navbarIconHeight);
-    padding: var(--navbarIconPadding);
-    border-radius: var(--navbarIconBorderRadius);
+    margin: 0vh 0vw 0vh 0.5vw;
+    width: fit-content;
+    height: 30px;
+    padding: 0 1vw;
+    border-radius: 5px;
 
     display: flex;
     justify-content: center;
@@ -72,11 +72,11 @@ body {
     color: var(--navbarIconColor);
     background-color: var(--navbarIconBackgroundColor);
 
-    margin: var(--navbarRightIconMargin);
-    width: var(--navbarIconWidth);
-    height: var(--navbarIconHeight);
-    padding: var(--navbarIconPadding);
-    border-radius: var(--navbarIconBorderRadius);
+    margin: 0vh 0.5vw 0vh 0vw;
+    width: fit-content;
+    height: 30px;
+    padding: 0 1vw;
+    border-radius: 5px;
 
     display: flex;
     justify-content: center;
@@ -95,9 +95,9 @@ body {
     color: var(--menuTextColor);
 
     padding: 5px;
-    border-radius: var(--menuBorderRadius);
-    width: var(--menuPopoutWidth);
-    height: var(--menuPopoutHeight);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
 
     display: none;
     position: fixed;
@@ -106,9 +106,9 @@ body {
 }
 
 .menu .item {
-    padding: var(--menuPopoutItemPadding);
-    margin-top: var(--menuPopoutItemMargin);
-    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,10 +148,10 @@ body {
 .quickSetting .item {
     height: 100%;
     width: 100%;
-    background-color: var(--navbarIconBackgroundColor);
     border-radius: 10px;
-
     display: flex;
+
+    background-color: var(--navbarIconBackgroundColor);
 }
 
 .quickSetting .clock {
@@ -214,5 +214,29 @@ body {
 .quickSetting .accentColor .orange { color: #FFCA8B; }
 .quickSetting .accentColor .red { color: #FFA0A0; }
 
+.setting {
+    height: 80vh;
+    width: 60vw;
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
 
+.setting .group {
+    background-color: #42424288;
+    border-radius: 10px 0 0 10px;
+    color: var(--settingGroupTitleColor);
+    padding: var(--settingGroupPadding);
+}
+
+.setting .content {
+    background-color: #29292bdc;
+    border-radius: 0 10px 10px 0;
+    color: var(--settingContentTitleColor);
+    padding: var(--settingContentPadding);
+}
