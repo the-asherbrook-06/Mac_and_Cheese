@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    height: 4.5vh;
+    height: 45px;
     width: 100vw;
     background-color: var(--globalBackgroundColor);
     backdrop-filter: blur( var(--globalBackgroundBlur) );
@@ -31,7 +31,7 @@ body {
     color: var(--navbarIconColor);
     background-color: var(--navbarIconBackgroundColor);
 
-    margin: 0vh 0vw 0vh 0.5vw;
+    margin: 0 0 0 0.5vw;
     width: fit-content;
     height: 30px;
     padding: 0 1vw;
@@ -72,7 +72,7 @@ body {
     color: var(--navbarIconColor);
     background-color: var(--navbarIconBackgroundColor);
 
-    margin: 0vh 0.5vw 0vh 0vw;
+    margin: 0 0.5vw 0 0;
     width: fit-content;
     height: 30px;
     padding: 0 1vw;
@@ -101,7 +101,7 @@ body {
 
     display: none;
     position: fixed;
-    top: 5vh;
+    top: 50px;
     left: 10px;
 }
 
@@ -132,7 +132,7 @@ body {
     border-radius: 10px;;
 
     position: fixed;
-    top: 5vh;
+    top: 50px;
     right: 10px;
 
     background-color: var(--globalBackgroundColor);
@@ -200,7 +200,7 @@ body {
     align-items: center;
 }
 .quickSetting .accentColor .color:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 .quickSetting .accentColor .color:active {
     transform: scale(1.1);
@@ -219,6 +219,20 @@ body {
 }
 .quickSetting  .interactive:active {
     background-color: var(--globalActiveColor);
+}
+
+.quickSettingPopout .item {
+    top: 275px;
+    right: 145px;
+    display: none;
+    position: fixed;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transform: translateX(50%);
+    
+    color: #ccc;
+    background-color: var(--navbarIconBackgroundColor);
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
 }
 
 .setting {

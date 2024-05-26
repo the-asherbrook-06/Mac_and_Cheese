@@ -36,20 +36,20 @@
     </div>
 
     <div class="quickSetting roboto" id="quickSettingPopout">
-        <div class="clock item" id="quickSettingsClock"> 
+        <div class="clock item interactive" id="quickSettingsClock"> 
             <div class="time"></div>
             <div class="am-pm"></div>
         </div>
-        <div class="account item interactive">
+        <div class="account item interactive" id="quickSettingsAccount">
             <span class="material-symbols-outlined">account_circle</span>
         </div>
-        <div class="settingShortcut item interactive">
+        <div class="settingShortcut item interactive" id="quickSettingsSettings">
             <span class="material-symbols-outlined" id="preferencesButton">settings</span>
         </div>
-        <div class="windowMode item interactive">
+        <div class="windowMode item interactive"  id="quickSettingsBackgroundSwitch">
             <span class="material-symbols-outlined">select_window</span>
         </div>
-        <div class="accentColor item">
+        <div class="accentColor item" id="quickSettingsAccentColorSwitch">
             <span class="material-symbols-outlined color purple" id="purpleAccentButton"> check_circle </span>
             <span class="material-symbols-outlined color blue" id="blueAccentButton"> radio_button_checked </span>
             <span class="material-symbols-outlined color cyan" id="cyanAccentButton"> radio_button_checked </span>
@@ -58,6 +58,14 @@
             <span class="material-symbols-outlined color orange" id="orangeAccentButton"> radio_button_checked </span>
             <span class="material-symbols-outlined color red active" id="redAccentButton"> radio_button_checked </span>
         </div>     
+    </div>
+
+    <div class="quickSettingPopout roboto">
+        <div class="clock item"> Clock </div>
+        <div class="account item"> Account </div>
+        <div class="settings item"> Settings </div>
+        <div class="background item"> Switch Background </div>
+        <div class="accentColor item"> Change Accent Color </div>
     </div>
 
     <div class="setting roboto" id="settingWindow">
@@ -76,3 +84,4 @@
 <script src="./Scripts/quickSettings.js"></script>
 <script src="./Scripts/clock.js"></script>
 <script src="./Scripts/accentColor.js"></script>
+<script src="./Scripts/quickSettingsPopout.js"></script>
