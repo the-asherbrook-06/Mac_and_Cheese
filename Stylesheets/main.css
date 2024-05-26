@@ -214,6 +214,13 @@ body {
 .quickSetting .accentColor .orange { color: #FFCA8B; }
 .quickSetting .accentColor .red { color: #FFA0A0; }
 
+.quickSetting  .interactive:hover {
+    background-color: var(--globalHoverColor);
+}
+.quickSetting  .interactive:active {
+    background-color: var(--globalActiveColor);
+}
+
 .setting {
     height: 80vh;
     width: 60vw;
