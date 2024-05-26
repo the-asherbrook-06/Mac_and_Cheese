@@ -6,7 +6,7 @@
 
 body {
     background-color: var(--globalBackgroundColor);
-    background-image: var(--globalBackgroundImage-2);
+    background-image: url('/Assets/BackgroundImages/Abstract_4.jpg');
     background-size: 100%;
 }
 
@@ -231,7 +231,7 @@ body {
     transform: translateX(50%);
     
     color: #ccc;
-    background-color: var(--navbarIconBackgroundColor);
+    background-color: var(--globalBackgroundColor);
     backdrop-filter: blur( var(--globalBackgroundBlur) );
 }
 

@@ -1,11 +1,5 @@
 :root {
 
-    /* Background Variants */
-    --globalBackgroundImage-0: '';
-    --globalBackgroundImage-1: url('../Assets/BackgroundImages/Abstract_1.jpg');
-    --globalBackgroundImage-2: url('../Assets/BackgroundImages/Abstract_2.jpg');
-    --globalBackgroundImage-3: url('../Assets/BackgroundImages/Abstract_3.jpg');
-
     /* Global Variables */
     --globalBackgroundColor: #1d1d1f99;
     --globalBackgroundBlur: 15px;

@@ -41,7 +41,6 @@ background.addEventListener('mouseout', () => {
 });
 
 accentColor.addEventListener('mouseover', () => {
-    console.log("hi");
     accentColorPopout.style.display = 'inline';
 });
 accentColor.addEventListener('mouseout', () => {
