@@ -26,12 +26,12 @@
 
     <div class="menu roboto" id="menuPopout">
         <div class="item">
-            <div class="content">Home</div>
-            <div class="shortcut"> ⌥ H </div>
+            <div class="content">User Side</div>
+            <div class="shortcut"> ⌥ U </div>
         </div>
         <div class="item">
-            <div class="content">About</div>
-            <div class="shortcut"> ⌥ A</div>
+            <div class="content">Client Side</div>
+            <div class="shortcut"> ⌥ C</div>
         </div>
     </div>
 
@@ -68,21 +68,93 @@
         <div class="accentColor item"> Change Accent Color </div>
     </div>
 
-    <div class="setting roboto" id="settingWindow">
+    <div class="home roboto" id="settingWindow">
         <div class="group">
-            hello
+            <div class="title roboto-medium">Home</div>
+            <div class="select">
+                <div class="link" id="homeContentOverviewButton">Overview</div>
+                <div class="link" id="homeContentFindButton">Find</div>
+                <div class="link" id="homeContentOverviewButton3">Overview</div>
+            </div>
         </div>
-        <div class="content">
-            hello
+        <div class="content" id="homeContentOverview">
+            <div class="title">Overview</div>
+            <hr>
+            <div class="contentBody">
+                <div class="search">
+                    <!-- content -->
+                </div>
+            </div>
+        </div>
+        <div class="content" id="homeContentFind">
+            <div class="title">Find</div>
+            <hr>
+            <div class="contentBody">
+                <!-- Content -->
+                <form action="#" class="Input">
+                    <div class="inputs">
+                        <label for="Date">Date</label>
+                        <input type="date" id="Date">
+                    </div>
+                        <div class="inputs">
+                        <label for="Time">Time</label>
+                        <input type="time" id="Time">
+                    </div>
+                    <div class="inputs">
+                        <label for="Place">Location</label>
+                        <input type="text" placeholder="Enter Location Coordinate" id="Place">
+                    </div>
+                </form>
+                <div class="details">
+                    <div class="detailsTitle">Details</div>
+                    <div class="detailsContent">
+                        <div class="item detailsContentDate">Date: </div>
+                        <div class="item detailsContentTime">Time: </div>
+                        <div class="item detailsContentLocation">Location: </div>
+                        <div class="item detailsContentCoordinate">Coordinate: </div>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="carouselTitle">Results</div>
+                    <div class="container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <video controls class="slide" id="slide-1">
+                                    <source src="./Assets/CarouselVideos/One Piece - 234 1080p.mkv">
+                                </video>
+                                <video controls class="slide" id="slide-2">
+                                    <source src="./Assets/CarouselVideos/One Piece - 235 1080p.mkv">
+                                </video>
+                                <video controls class="slide" id="slide-3">
+                                    <source src="./Assets/CarouselVideos/One Piece - 236 1080p.mkv">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sliderNav">
+                    <a href="#slide-1">Video 1</a>
+                    <a href="#slide-2">Video 2</a>
+                    <a href="#slide-3">Video 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="homeContentOverview3">
+            <div class="title">Overview3</div>
+            <hr>
+            <div class="contentBody">
+                <!-- Content -->
+            </div>
         </div>
     </div>
 
 </body>
 </html>
 
+<script src="./Scripts/home.js"></script>
+<script src="./Scripts/clock.js"></script>
 <script src="./Scripts/menuPopout.js"></script>
 <script src="./Scripts/quickSettings.js"></script>
-<script src="./Scripts/clock.js"></script>
 <script src="./Scripts/accentColor.js"></script>
 <script src="./Scripts/quickSettingsPopout.js"></script>
 <script src="./Scripts/switchBackground.js"></script>

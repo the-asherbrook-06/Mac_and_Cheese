@@ -22,12 +22,12 @@
     --quickSettingsColor: #ccc;
     --quickSettingsItemBackgroundColor: rgba(128, 128, 128, 0.089);
 
-    /* Setting Group */
-    --settingGroupTitleColor: #ccc;
-    --settingGroupPadding: 20px;
+    /* Home Group */
+    --HomeGroupTitleColor: #ccc;
+    --HomeGroupPadding: 10px;
 
-    /* Setting Content */
-    --settingContentTitleColor: #eee;
-    --settingContentPadding: 20px;
+    /* Home Content */
+    --HomeContentTitleColor: #eee;
+    --HomeContentPadding: 20px;
 
 }
