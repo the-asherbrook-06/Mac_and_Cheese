@@ -232,6 +232,7 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     transform: translateX(50%);
+    z-index: 10;
     
     color: #ccc;
     background-color: var(--globalBackgroundColor);
@@ -241,7 +242,6 @@ body {
 .home {
     height: 85vh;
     width: 90vw;
-    backdrop-filter: blur( var(--globalBackgroundBlur) );
 
     position: fixed;
     top: 50%;
@@ -255,6 +255,7 @@ body {
     background-color: #42424288;
     border-radius: 10px 0 0 10px;
     color: var(--HomeGroupTitleColor);
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
     padding: var(--HomeGroupPadding);
 }
 
@@ -281,6 +282,7 @@ body {
 }
 
 .home .content {
+    backdrop-filter: blur( var(--globalBackgroundBlur) );
     background-color: #29292bdc;
     border-radius: 0 10px 10px 0;
     height: 85vh;
@@ -329,6 +331,12 @@ body {
 }
 .home .content .contentBody .Input .inputs input:hover {
     background-color: var(--globalHoverColor);
+}
+.home .content .contentBody .Input .inputs input:-ms-input-placeholder {
+    color: var(--HomeContentTitleColor);
+}
+.home .content .contentBody .Input .inputs input::placeholder {
+    color: var(--HomeContentTitleColor);
 }
 
 .home .content .contentBody .details {
